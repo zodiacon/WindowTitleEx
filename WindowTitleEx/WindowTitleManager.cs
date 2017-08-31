@@ -48,7 +48,7 @@ namespace WindowTitleEx {
                         var stext = text.ToString();
                         int index = stext.IndexOf("(HWND: ");
                         if(index >= 0) {
-                            stext = stext.Substring(0, index);
+                            stext = stext.Substring(0, index - 1);
                             NativeMethods.SetWindowText(hWnd, stext);
                         }
                     }
