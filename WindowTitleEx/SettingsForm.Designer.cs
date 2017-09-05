@@ -40,6 +40,7 @@
             // 
             // txtProcesses
             // 
+            this.txtProcesses.AcceptsReturn = true;
             this.txtProcesses.Location = new System.Drawing.Point(16, 42);
             this.txtProcesses.Multiline = true;
             this.txtProcesses.Name = "txtProcesses";
