@@ -128,7 +128,7 @@ namespace WindowTitleEx {
 					if (rc.Width > 50 && rc.Height > 1 && text.Length > 0) {
 						var stext = text.ToString();
 						if (stext.LastIndexOf("PID: ") < 0) {
-							text.Append($" (HWND: 0x{hWnd:X}, TID: {tid}, PID: {pid})");
+							text.Append($" (HWND: 0x{hWnd.ToInt64():X}, TID: {tid}, PID: {pid})");
 							NativeMethods.SetWindowText(hWnd, text.ToString());
 						}
 					}
